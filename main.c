@@ -70,9 +70,9 @@ float evaluacion(char *a)
             switch(*a)
             {
                 case '+' : resultado = operando_izquierdo + operando_derecho; break;
-                case '-' : resultado = operando_izquierdo + operando_derecho; break;
-                case '*' : resultado = operando_izquierdo + operando_derecho; break;
-                case '/' : resultado = operando_izquierdo + operando_derecho; break;
+                case '-' : resultado = operando_izquierdo - operando_derecho; break;
+                case '*' : resultado = operando_izquierdo * operando_derecho; break;
+                case '/' : resultado = operando_izquierdo / operando_derecho; 
             }
             meter_pila_float(&pila, resultado);
         }
