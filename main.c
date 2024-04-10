@@ -34,13 +34,14 @@ void meter_pila_char(struct pila_char *a, unsigned char b);
 int pila_vacia_char(struct pila_char *a);
 unsigned char sacar_pila_char(struct pila_char *a);
 
-void main()
+int main()
 {
     unsigned char entrada [50], salida [50]; 
     printf ("Expresion : "); gets (entrada); 
     posfija (entrada, salida); 
     printf("Postija = %s", salida); 
     printf("\nResu1tado = %.2f", evaluacion (salida)); 
+    return 0;
 }
 
 int asignar_prioridad(unsigned char a)
